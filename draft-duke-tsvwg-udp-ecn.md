@@ -127,7 +127,7 @@ options of level IPPROTO_IP and type IP_RECVECN for IPv4, and IPPROTO_IPV6
 and IPV6_RECVECN for IPv6. The author was unable to identify any online
 documentation of these options at the time of writing.
 
-For dual-stack socekts, WSASetRecvIPEcn() will not enable ECN reporting for
+For dual-stack sockets, WSASetRecvIPEcn() will not enable ECN reporting for
 IPv4. This requires a separate setsockopt() call using the IP_RECVECN option.
 
 Experiments revealed that if a socket is bound to a IPv6-mapped IPv4 address
